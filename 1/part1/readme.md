@@ -1,4 +1,4 @@
-#TASK
+# TASK
 --- Day 1: Secret Entrance ---
 
 The Elves have good news and bad news.
@@ -82,7 +82,7 @@ Because the dial points at 0 a total of three times during this process, the pas
 Analyze the rotations in your attached document. What's the actual password to open the door?
 
 
-#SOLUTION
+# SOLUTION
 The script begins by using a regular expression filter to scan the input file and extract only valid rotation commands (like "L9" or "R50").
 It initializes the dial's tracking variable to 50, which is the required starting position for the puzzle.
 The program iterates through the cleaned list of instructions one by one, separating the directional letter ("L" or "R") from the numeric distance.
