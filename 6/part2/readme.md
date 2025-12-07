@@ -52,3 +52,6 @@ Finally, the leftmost problem is 356 * 24 * 1 = 8544
 Now, the grand total is 1058 + 3253600 + 625 + 8544 = 3263827.
 
 Solve the problems on the math worksheet again. What is the grand total found by adding together all of the answers to the individual problems?
+
+# SOLUTION
+The solution begins by reading the input file and transposing the grid of characters, effectively turning vertical columns into horizontal rows for easier processing. It initializes a running total score and a temporary list to hold the numbers found within the current equation block. As the code iterates through each column, it checks the character at the bottom to determine if the active mathematical operation should be updated to addition or multiplication. Simultaneously, the script cleans and joins the digits in the current column to form a complete integer, which is then appended to the number list. When the loop encounters a column that contains only whitespace, it treats this as a separator and immediately calculates the result of the collected numbers using the current operator. Finally, this partial result is added to the total score, and the number list is cleared to prepare for the next vertical equation.
